@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COSY Airconditioners</title>
+  <!-- favicon link -->
+  <link rel="shortcut icon" href="img/cosy airconditioners logo.png" type="image/x-icon">
+  <!-- css file -->
+  <link rel="stylesheet" href="src/style.css">
+  <!-- font link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+  </style>
+  <!-- animate.css -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- offline bootstrap css -->
+  <link rel="stylesheet" href="src/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+   <!-- whatsapp button -->
+   <a href="https://web.whatsapp.com/" class="float" target="_blank">
+    <i class="fa-brands fa-whatsapp my-float"></i>
+    </a>
+  <!-- top navbar start -->
+  <div class="top-navbar px-2">
+    <p>WELCOME TO OUR SHOP</p>
+    <div class="icons">
+      <a href="#"> <img src="img/icons/register icon.png" alt="icon" width="18px"> Login </a>
+      <a href="#"> <img src="img/icons/register icon.png" alt="icon" width="18px"> Register </a>
+    </div>
+  </div>
+  <!-- top navbar end -->
+
+
+  <!-- navbar start -->
+  <nav class="navbar navbar-expand-lg px-2">
+    <div class="container-fluid">
+      <div class="col-lg-2 col-md-6">
+        <a class="navbar-brand" href="#">
+          <img height="120" width="auto" src="img/cosy airconditioners logo.png" alt="logo">
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse col-lg-10 col-md-6 justify-content-between" id="navbarSupportedContent">
+        <div class="col-lg-7 col-12">
+          <ul class="navbar-nav mb-2 mb-lg-0 justify-content-between text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Products</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Category
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="haiercategory.html">Haier</a></li>
+                <li><a class="dropdown-item" href="dawlancecategory.html">Dawlance</a></li>
+                <li><a class="dropdown-item" href="orientcategory.html">Orient</a></li>
+                <li><a class="dropdown-item" href="tclcategory.html">TCL</a></li>
+                <li><a class="dropdown-item" href="greecategory.html">GREE</a></li>
+              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="compare.html">Compare</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-12">
+          <form class="d-flex text-center justify-content-center" role="search" id="search">
+            <input class="form-control me-2 myinput" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary mt-2" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
+
+
+  <!-- contact banner start -->
+  <section class="contact-section">
+    <div class="contact-bg">
+      <h1>contact us</h1>
+      <div class="line">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <p class="text">For any inquiries, support, or expert advice on cooling solutions, at Cosy AirConditioners. Our
+        dedicated team is ready to assist you with all your queries. Contact us via phone, email, or through our
+        convenient online form, and let us help you.</p>
+    </div>
+    <!-- contact banner end -->
+
+
+    <!-- contact form start -->
+   <div class="container-fluid">
+    <div class="row contact-form">
+      <div class="col-lg-6 px-5">
+        <div class="contact-box px-5 mt-5 mb-5">
+          <h3 class="contact-heading">Get in Touch with Us</h3>
+          <form>
+            <div>
+              <input type="text" id="fname" class="form-control" placeholder="First Name" required>
+              <input type="text" id="lname" class="form-control" placeholder="Last Name" required>
+            </div>
+            <div>
+              <input type="email" id="email" class="form-control" placeholder="E-mail" required>
+              <input type="text" id="phone" class="form-control" placeholder="Phone" required>
+            </div>
+            <textarea id="message" rows="5" placeholder="Message" class="form-control" required></textarea>
+            <input type="button" class="send-btn" value="send message" onclick="checkForm()">
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img class="img-fluid" src="img/contact image.jpg" alt="">
+      </div>
+    </div>
+   </div>
+    <!-- contact form end -->
+
+
+    <!-- contact info start -->
+    <div class="contact-info">
+      <div>
+        <span><i class="fas fa-mobile-alt"></i></span>
+        <span>Phone No.</span>
+        <span class="text">1-2392-23928-2</span>
+      </div>
+      <div>
+        <span><i class="fas fa-envelope-open"></i></span>
+        <span>E-mail</span>
+        <span class="text">Cosyairconditioners@gmail.com</span>
+      </div>
+      <div>
+        <span><i class="fas fa-map-marker-alt"></i></span>
+        <span>Address</span>
+        <span class="text">Aptech Metro Star Gate, Karachi, Sindh
+        </span>
+      </div>
+      <div>
+        <span><i class="fas fa-clock"></i></span>
+        <span>Opening Hours</span>
+        <span class="text">Monday - Friday (9:00 AM to 5:00 PM)</span>
+      </div>
+    </div>
+    <!-- contact form end -->
+
+
+    <!-- map start -->
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.314135127817!2d67.14924997425256!3d24.88726427791178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339999415e0c3%3A0x36742eee0fd9c291!2sAptech%20Metro%20Star%20Gate!5e0!3m2!1sen!2s!4v1720594129084!5m2!1sen!2s"
+        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    </div>
+
+    <div class="contact-footer">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-youtube"></a>
+      </div>
+    </div>
+  </section>
+  <!-- map end -->
+
+
+  <!-- footer start -->
+  <footer id="footer">
+    <div class="footer-top px-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3> COSY Airconditioners</h3>
+            <p>
+              Karachi <br>
+              Sindh <br>
+              Pakistan <br>
+            </p>
+            <strong>Phone:</strong> 1-2392-23928-2 <br>
+            <strong>Email:</strong> Cosyairconditioners@gmail.com <br>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy policey</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links justify-content-center">
+            <h3>Our Social Networks</h3>
+            <p>Social networks links are the threads that weave our digital lives together, connecting us across
+              platforms and continents with a click.</p>
+
+            <div class="socail-links mt-3">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-skype"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class=" col-lg-3 col-md-6 tab-content custom-tab-content">
+            <div class="subscribe-panel mt-2">
+            <h3>Newsletter!!!</h3>
+            <p>Subscribe to our weekly Newsletter and stay tuned.</p>
+                            
+                            <form action="" method="post">    
+                            <div class="input-group">
+                              <input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+                            </div>
+                                <button class="btn justify-content-center">Subscribe Now!</button>
+                          </form>
+            
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>COSY Airconditioners</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by KN team
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+  <script src="src/script.js"></script>
+  <!-- offline bootstrap js -->
+  <script src="src/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  <!-- for slider -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <!-- for animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

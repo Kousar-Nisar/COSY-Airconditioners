@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COSY Airconditioners</title>
+  <!-- favicon link -->
+  <link rel="shortcut icon" href="img/cosy airconditioners logo.png" type="image/x-icon">
+  <!-- css file -->
+  <link rel="stylesheet" href="src/style.css">
+  <!-- font link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+  </style>
+  <!-- animate.css -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- offline bootstrap css -->
+  <link rel="stylesheet" href="src/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous">
+</head>
+
+<body>
+   <!-- whatsapp button -->
+   <a href="https://web.whatsapp.com/" class="float" target="_blank">
+    <i class="fa-brands fa-whatsapp my-float"></i>
+    </a>
+  <!-- top navbar start -->
+  <div class="top-navbar px-2">
+    <p>WELCOME TO OUR SHOP</p>
+    <div class="icons">
+      <a href="#"> <img src="img/icons/register icon.png" alt="icon" width="18px"> Login </a>
+      <a href="#"> <img src="img/icons/register icon.png" alt="icon" width="18px"> Register </a>
+    </div>
+  </div>
+  <!-- top navbar end -->
+  <!-- navbar start -->
+  <nav class="navbar navbar-expand-lg px-2">
+    <div class="container-fluid">
+      <div class="col-lg-2 col-md-6">
+        <a class="navbar-brand" href="#">
+          <img height="120" width="auto" src="img/cosy airconditioners logo.png" alt="logo">
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse col-lg-10 col-md-6 justify-content-between" id="navbarSupportedContent">
+       <div class="col-lg-7 col-12">
+        <ul class="navbar-nav mb-2 mb-lg-0 justify-content-between text-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">Products</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="haiercategory.html">Haier</a></li>
+              <li><a class="dropdown-item" href="dawlancecategory.html">Dawlance</a></li>
+              <li><a class="dropdown-item" href="orientcategory.html">Orient</a></li>
+              <li><a class="dropdown-item" href="tclcategory.html">TCL</a></li>
+              <li><a class="dropdown-item" href="greecategory.html">GREE</a></li>
+            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="compare.html">Compare</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          </li>
+        </ul>
+       </div>
+       <div class="col-lg-4 col-12">
+        <form class="d-flex text-center justify-content-center" role="search" id="search">
+          <input class="form-control me-2 myinput" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary mt-2" type="submit">Search</button>
+        </form>
+       </div>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
+<!-- product banner start -->
+<div class = "product-bg">
+  <h1>compare products </h1>
+  <div class = "line">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <p class = "text">Explore our products and you'll find the perfect cooling solution to meet your requirements.</p>
+</div>
+
+<!-- product banner end -->
+
+<!-- Compare start -->
+<h1 class="display-5 mt-5 text-center">Comparison</h1>
+<div class="container">
+  <div class="row justify-content-center p-5">
+    <div class="col-md-4">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Select"
+        list="products1"
+        id="prod1"
+        onchange="getProducts1(this.value)"
+      />
+      <datalist id="products1"></datalist>
+      <table class="table">
+        <tbody id="table1">
+          <tr>
+            <th>Product Image:</th>
+            <td>
+              <img src="https://via.placeholder.com/150" alt="Dummy Image" class="prodImg" />
+            </td>
+          </tr>
+          <tr>
+            <th>Product Name:</th>
+            <td>Empty</td>
+          </tr>
+          <tr>
+            <th>Product SKU-Num:</th>
+            <td>Empty</td>
+          </tr>
+          <tr>
+            <th>Product Price:</th>
+            <td>Empty</td>
+          </tr>
+          <tr>
+            <th>Product Brand:</th>
+            <td>Empty</td>
+          </tr>
+          <tr>
+            <th>Product Description:</th>
+            <td>Empty</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-4">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Select"
+        list="products2"
+        id="prod2"
+        onchange="getProducts2(this.value)"
+      />
+      <datalist id="products2"> </datalist>
+      <table class="table">
+        <tbody id="table2">
+          <tr>
+            <th>Product Image:</th>
+            <td>
+              <img src="https://via.placeholder.com/150" alt="Dummy Image" class="prodImg" />
+            </td>
+          </tr>
+          <tr>
+            <th>Product Name:</th>
+            <td>Empty</td>
+          </tr>
+          <tr>
+            <th>Product SKU-Num:</th>
+            <td>Empty</td>
+          </tr>
+          <tr>
+            <th>Product Price:</th>
+            <td>Empty</td>
+          </tr>
+          <tr>
+            <th>Product Brand:</th>
+            <td>Empty</td>
+          </tr>
+          <tr>
+            <th>Product Description:</th>
+            <td>Empty</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Compare end -->
+     <!-- footer start -->
+     <footer id="footer">
+      <div class="footer-top px-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3> COSY Airconditioners</h3>
+              <p>
+                Karachi <br>
+                Sindh <br>
+                Pakistan <br>
+              </p>
+              <strong>Phone:</strong> 1-2392-23928-2 <br>
+              <strong>Email:</strong> Cosyairconditioners@gmail.com <br>
+            </div>
+  
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h3>Useful Links</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy policey</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 footer-links justify-content-center">
+              <h3>Our Social Networks</h3>
+              <p>Social networks links are the threads that weave our digital lives together, connecting us across
+                platforms and continents with a click.</p>
+  
+              <div class="socail-links mt-3">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class=" col-lg-3 col-md-6 tab-content custom-tab-content">
+              <div class="subscribe-panel mt-2">
+              <h3>Newsletter!!!</h3>
+              <p>Subscribe to our weekly Newsletter and stay tuned.</p>
+                              
+                              <form action="" method="post">    
+                              <div class="input-group">
+                                <input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+                              </div>
+                                  <button class="btn justify-content-center">Subscribe Now!</button>
+                            </form>
+              
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container py-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>COSY Airconditioners</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by KN team
+        </div>
+      </div>
+    </footer>
+  <!-- footer end -->
+   <script src="src/script.js"></script>
+   <script src="src/comparedata.js"></script>
+   <script>
+    const productsList1 = document.getElementById('products1');
+    const productsList2 = document.getElementById('products2');
+
+    prods.forEach((prod) => {
+      const option1 = document.createElement('option');
+      option1.value = prod.prodName;
+      productsList1.appendChild(option1);
+
+      const option2 = document.createElement("option");
+      option2.value = prod.prodName;
+      productsList2.appendChild(option2);
+    });
+
+    function getProducts1(product) {
+      prod2 = document.getElementById("prod2").value;
+      if (product != prod2) {
+      const selectProduct = prods.find((pd) => pd.prodName == product);
+      if (selectProduct) {
+        const table = document.getElementById('table1');
+        table.innerHTML = '';
+        const rows = [
+          `<tr><th>Product Image:</th>
+            <td><img src="${selectProduct.prodImg}" alt="${selectProduct.prodName}" class='prodImg'></td></tr>`,
+          `<tr><th>Product Name:</th>
+            <td>${selectProduct.prodName}</td></tr>`,
+          `<tr><th>Product Brand:</th>
+            <td>${selectProduct.ProdBrand}</td></tr>`,
+          `<tr><th>Product SKU-Num:</th>
+            <td>${selectProduct.skuNumber}</td></tr>`,
+          `<tr><th>Product Price:</th>
+            <td>${selectProduct.prodPrice}</td></tr>`,
+          `<tr><th>Product Description:</th>
+            <td>${selectProduct.prodDesc}</td></tr>`,
+        ];
+        rows.forEach((row) => {
+          const tr = document.createElement('tr');
+          tr.innerHTML = row;
+          table.appendChild(tr);
+        });
+      }
+      } else {
+        document.getElementById("prod1").value = "";
+        alert("Select a Different Product");
+      }
+    }
+
+    function getProducts2(product) {
+      prod1 = document.getElementById('prod1').value;
+      if (product != prod1) {
+        const selectProduct = prods.find((pd) => pd.prodName == product);
+        if (selectProduct) {
+          const table = document.getElementById('table2');
+          table.innerHTML = '';
+          const rows = [
+          `<tr><th>Product Image:</th>
+            <td><img src="${selectProduct.prodImg}" alt="${selectProduct.prodName}" class='prodImg'></td></tr>`,
+          `<tr><th>Product Name:</th>
+            <td>${selectProduct.prodName}</td></tr>`,
+          `<tr><th>Product Brand:</th>
+            <td>${selectProduct.ProdBrand}</td></tr>`,
+          `<tr><th>Product SKU-Num:</th>
+            <td>${selectProduct.skuNumber}</td></tr>`,
+          `<tr><th>Product Price:</th>
+            <td>${selectProduct.prodPrice}</td></tr>`,
+          `<tr><th>Product Description:</th>
+            <td>${selectProduct.prodDesc}</td></tr>`,
+        ];
+          rows.forEach((row) => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = row;
+            table.appendChild(tr);
+          });
+        }
+      } else {
+        document.getElementById('prod2').value = '';
+        alert('Select a Different Product');
+      }
+    }
+  </script>
+  <!-- offline bootstrap js -->
+  <script src="src/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  <!-- for slider -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <!-- for animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+  crossorigin="anonymous"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
